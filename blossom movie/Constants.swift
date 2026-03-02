@@ -16,12 +16,17 @@ struct Constants{
     
     static let playString = "Play"
     
+    static let trendingMovieString = "Trending Movies"
+    
     static let homeIconString = "house"
     static let upcomingIconString = "play.circle"
     static let searchIconString = "magnifyingglass"
     static let downloadIconString = "arrow.down.to.line"
     
-    static let testTitleURL = "http://ia.media-imdb.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1._SX320.jpg"
+    static let testTitleURL = "https://image.tmdb.org/t/p/w500/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg"
+    static let testTitleURL2 = "https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg"
+    static let testTitleURL3 = "https://image.tmdb.org/t/p/w500/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg"
+    static let testTitleURL4 = "https://image.tmdb.org/t/p/w500/ngl2FKBlU4fhbdsrtdom9LVLBXw.jpg"
 }
 
 
