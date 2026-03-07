@@ -11,22 +11,30 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView{
-            Text(Constants.homeString)
+            HomeView()
                     .tabItem {
                         Label(Constants.homeString, systemImage: Constants.homeIconString)
+                        
+                        
                     }
-            Text(Constants.upcomingString)
+            UpcomingView()
                     .tabItem {
                         Label(Constants.upcomingString, systemImage: Constants.upcomingIconString)
                     }
-            Text(Constants.searchString)
+            SearchView()
                     .tabItem {
                         Label(Constants.searchString, systemImage: Constants.searchIconString)
                     }
-            Text(Constants.downloadString)
+            DownloadView()
                     .tabItem {
                         Label(Constants.downloadString, systemImage: Constants.downloadIconString)
                     }
+        }
+        .onAppear{
+            if let config = APIConfig.shared {
+                print(config.tmdbAPIKey)
+                print(config.tmdbBaseURL)
+            }
         }
     }
 }

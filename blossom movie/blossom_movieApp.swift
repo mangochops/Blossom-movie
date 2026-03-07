@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct blossom_movieApp: App {
@@ -13,5 +14,6 @@ struct blossom_movieApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Title.self)
     }
 }
